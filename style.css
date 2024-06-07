@@ -1,0 +1,199 @@
+
+ @-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
+
+.button {
+    animation: heartbeat 1.5s ease-in-out infinite both;
+    width: 150px;
+    height: 50px;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-family: sans-serif;
+    font-size: 18px;
+  }
+
+.content_1 {
+  margin-top: 200px;
+  margin-left: 200px;
+  position: relative;
+  padding: 200px;
+}
+
+.item_one {
+  position: absolute;
+  width: 150px;
+  height: 60px;
+  border: 1px solid #000;
+  background-color: aqua;
+}
+
+.item_1_1 {
+    transform: rotate(90deg);
+}
+
+.item_1_2 {
+    transform: rotate(45deg);
+}
+
+.item_1_3 {
+    transform: rotate(135deg);
+}
+
+.item {
+   
+  width: 150px;
+  height: 86px;
+  background-color: forestgreen;
+  border: 1px solid #000;
+  transition: transform 1s;
+}
+
+.item_1:hover {
+    transform: translateX(50px);
+}
+
+.item_2:hover {
+    transform: scale(2);
+}
+
+.item_3:hover {
+    transform: rotate(60deg);
+}
+
+.product {
+  width: 250px;
+  padding: 24px;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.product__img {
+  background-color: forestgreen;
+  height: 150px;
+}
+
+.product_new::after {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 35px;
+    content: "New";
+    height: 35px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_sale::before {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 35px;
+    content: "Sale";
+    height: 35px;
+    background-color: orange;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__link:hover {
+    color: red;
+}
+
+.menu__link:active {
+    color: green;
+}
+
+.menu__list:first-child .menu__link{
+    text-decoration: none;
+}
+
+.menu__list:last-child .menu__link{
+    font-weight: bold;
+}
+
+.menu__list:nth-child(3) .menu__link{
+    background-color: orange;
+}
+
+.icon:hover path {
+    fill: purple;
+}
+
+.icon:active path {
+    fill: yellow;
+}
+
